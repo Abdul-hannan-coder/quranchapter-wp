@@ -93,7 +93,7 @@ get_header();
           <div class="c-box">
             <div class="c-box-icon"><svg><use href="#i-mail"/></svg></div>
             <h3>Email</h3>
-            <a href="mailto:quranchapterofficial@gmail.com">quranchapterofficial@gmail.com</a>
+            <a href="mailto:official@quranchapter.com">official@quranchapter.com</a>
           </div>
 
           <!-- 4: Support Hours -->

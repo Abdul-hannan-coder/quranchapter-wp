@@ -9896,6 +9896,7 @@ textarea.quran-input {
 
 /* Force CTA button groups to display in a column on small screens */
 @media (max-width: 768px) {
+
   .hero-actions,
   .hero-v3 .hero-actions,
   .about-actions,
@@ -9924,4 +9925,90 @@ textarea.quran-input {
     text-align: center !important;
     font-size: 11.5px !important;
   }
+}
+
+/* =========================================================
+   ABOUT BUTTONS: side by side on desktop, stacked on mobile
+   ========================================================= */
+@media (min-width: 769px) {
+  .about-actions {
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+
+  .about-actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 10px;
+    padding: 15px 16px;
+    font-size: 11px;
+    letter-spacing: .05em;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .about-actions .btn svg {
+    flex-shrink: 0;
+  }
+}
+
+/* =========================================================
+   COURSES SECTION: Free Trial + WhatsApp side by side
+   ========================================================= */
+.course-all-offers-wrap {
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-all-offers.btn-all-offers-wa {
+  background: #25D366;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.3);
+}
+
+.btn-all-offers.btn-all-offers-wa:hover {
+  background: #1EBE5A;
+  color: #fff !important;
+  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.42);
+}
+
+@media (max-width: 768px) {
+  .course-all-offers-wrap {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .course-all-offers-wrap .btn-all-offers {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 20px !important;
+    font-size: 11.5px;
+  }
+}
+
+/* =========================================================
+   FLOATING WHATSAPP: keep only one button
+   ========================================================= */
+.whatsapp-float-v2~.whatsapp-float-v2,
+.wa-icon-circle .wa-icon-circle,
+.wa-icon-circle .wa-svg-icon~.wa-svg-icon {
+  display: none !important;
+}
+
+.wa-icon-circle,
+.wa-icon-circle::before,
+.wa-icon-circle::after,
+.whatsapp-float-v2::before,
+.whatsapp-float-v2::after {
+  animation: none !important;
+}
+
+.wa-icon-circle::before,
+.wa-icon-circle::after,
+.whatsapp-float-v2::before,
+.whatsapp-float-v2::after {
+  content: none !important;
 }

@@ -45,7 +45,7 @@
   <div class="bismillah topbar-v3">
     <div class="container topbar-inner">
       <a class="topbar-wa-link" href="https://wa.me/447466484751?text=Hello%2C%20I%20would%20like%20a%20free%20consultation" target="_blank" rel="noopener"><svg class="topbar-wa-svg"><use href="#i-whatsapp"/></svg> +44 7466 484751</a>
-      <a href="mailto:quranchapterofficial@gmail.com"><svg><use href="#i-mail"/></svg> quranchapterofficial@gmail.com</a>
+      <a href="mailto:official@quranchapter.com"><svg><use href="#i-mail"/></svg> official@quranchapter.com</a>
       <a class="topbar-wa-link" href="https://wa.me/447466484751?text=Hello%2C%20I%20would%20like%20a%20free%20consultation" target="_blank" rel="noopener"><svg class="topbar-wa-svg"><use href="#i-whatsapp"/></svg> +44 7466 484751</a>
       <small>Learn Quran · Build Character · A Better Tomorrow</small>
     </div>
@@ -142,7 +142,7 @@ $qc_cta_url        = $is_single_landing ? '#free-trial' : home_url( '/online-qur
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
         <a href="https://wa.me/447466484751?text=Hello%2C%20I%20would%20like%20a%20free%20consultation" target="_blank" rel="noopener"><svg class="qc-fill"><use href="#i-whatsapp"/></svg> WhatsApp us (+44 7466 484751)</a>
-        <a href="mailto:quranchapterofficial@gmail.com"><svg><use href="#i-mail"/></svg> quranchapterofficial@gmail.com</a>
+        <a href="mailto:official@quranchapter.com"><svg><use href="#i-mail"/></svg> official@quranchapter.com</a>
       </div>
     </nav>
 

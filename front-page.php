@@ -166,6 +166,9 @@ get_header();
           <a href="#free-trial" class="btn btn-gold btn-all-offers">
             Book Your 7-Days Free Trial <svg><use href="#i-arrow"/></svg>
           </a>
+          <a href="https://wa.me/447466484751?text=Hello%2C%20I%20would%20like%20a%20free%20consultation" class="btn btn-whatsapp btn-all-offers btn-all-offers-wa" target="_blank" rel="noopener">
+            Free Consultation on WhatsApp <svg class="btn-wa-svg"><use href="#i-whatsapp"/></svg>
+          </a>
         </div>
       </div>
     </section>

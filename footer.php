@@ -49,7 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div>
         <h4>Get in touch</h4>
         <a href="https://wa.me/447466484751?text=Hello%2C%20I%20would%20like%20a%20free%20consultation" target="_blank" rel="noopener">WhatsApp: +44 7466 484751</a>
-        <a href="mailto:quranchapterofficial@gmail.com">quranchapterofficial@gmail.com</a>
+        <a href="mailto:official@quranchapter.com">official@quranchapter.com</a>
       </div>
     </div>
     <div class="copyright container">
