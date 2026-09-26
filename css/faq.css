@@ -1,0 +1,75 @@
+/* =============================================
+   FAQ STYLES
+   Quran Chapter Theme
+============================================= */
+
+
+.faq {
+  background: var(--cream)
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 100px
+}
+
+.faq-intro p {
+  color: var(--muted);
+  line-height: 1.7
+}
+
+.faq-intro>a {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--green);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .08em
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border)
+}
+
+.faq-item button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  color: var(--green-dark);
+  font-weight: 700;
+  cursor: pointer
+}
+
+.faq-item button b {
+  color: var(--gold);
+  font-size: 22px
+}
+
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: .3s
+}
+
+.faq-answer p {
+  overflow: hidden;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7
+}
+
+.faq-item.open .faq-answer {
+  grid-template-rows: 1fr
+}
+
+.faq-item.open .faq-answer p {
+  padding-bottom: 22px
+}
+

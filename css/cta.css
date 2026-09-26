@@ -1,0 +1,92 @@
+/* =============================================
+   CTA STYLES
+   Quran Chapter Theme
+============================================= */
+
+.cta {
+  height: 570px;
+  position: relative;
+  background: var(--green-deep);
+  color: #fff;
+  overflow: hidden
+}
+
+.cta-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.cta:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(4, 35, 31, .97) 0%, rgba(4, 35, 31, .8) 48%, rgba(4, 35, 31, .08) 100%)
+}
+
+.cta-content {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start
+}
+
+.cta h2 {
+  font-size: 59px
+}
+
+.cta p {
+  max-width: 580px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, .67)
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 20px
+}
+
+.call-link {
+  display: flex;
+  flex-direction: column;
+  padding-left: 26px;
+  border-left: 1px solid rgba(255, 255, 255, .2)
+}
+
+.call-link small {
+  color: rgba(255, 255, 255, .5);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .12em
+}
+
+.call-link b {
+  font-size: 15px;
+  margin-top: 4px
+}
+
+.support-bar {
+  background: var(--gold);
+  color: var(--green-deep)
+}
+
+.support-bar .container {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700
+}
+
+.support-bar a {
+  text-transform: uppercase;
+  letter-spacing: .08em
+}
+

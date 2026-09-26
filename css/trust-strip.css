@@ -1,0 +1,48 @@
+/* =============================================
+   TRUST STRIP STYLES
+   Quran Chapter Theme
+============================================= */
+
+.trust-strip {
+  background: var(--gold);
+  position: relative;
+  z-index: 3
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 105px
+}
+
+.trust-grid>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border-right: 1px solid rgba(7, 61, 55, .17)
+}
+
+.trust-grid>div:last-child {
+  border: 0
+}
+
+.trust-grid b {
+  font-family: var(--serif);
+  font-size: 29px;
+  color: var(--green-deep)
+}
+
+.trust-grid span {
+  max-width: 90px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  line-height: 1.4
+}
+
+.section {
+  padding: 110px 0
+}
+

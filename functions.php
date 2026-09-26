@@ -6,12 +6,30 @@
  */
 
 /**
- * Redirect root URL to /online-quran-academy/
+ * Remove WordPress block/global styles that conflict with theme CSS.
+ */
+function qc_remove_wp_block_styles() {
+    wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style( 'global-styles' );
+    wp_dequeue_style( 'classic-theme-styles' );
+    wp_dequeue_style( 'core-block-supports' );
+    wp_deregister_style( 'core-block-supports' );
+    remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+    remove_action( 'wp_footer', 'wp_enqueue_global_styles', 1 );
+}
+add_action( 'wp_enqueue_scripts', 'qc_remove_wp_block_styles', 100 );
+
+/**
+ * Redirect root URL to /online-quran-academy/ (production only)
  */
 function qc_redirect_home_to_slug() {
-    if ( is_front_page() && ! is_page( 'online-quran-academy' ) ) {
-        wp_redirect( home_url( '/online-quran-academy/' ), 301 );
-        exit;
+    if ( is_front_page() && ! is_page( 'online-quran-academy' ) && ! is_page( 'home' ) ) {
+        $page = get_page_by_path( 'online-quran-academy' );
+        if ( $page ) {
+            wp_redirect( home_url( '/online-quran-academy/' ), 301 );
+            exit;
+        }
     }
 }
 add_action( 'template_redirect', 'qc_redirect_home_to_slug' );
@@ -195,6 +213,12 @@ function qc_asset_url( $filename ) {
 		'hero-quran.png'            => 'https://quranchapter.com/wp-content/uploads/2026/09/hero-quran.png',
 		'logo.jpg'                  => 'https://quranchapter.com/wp-content/uploads/2026/09/logo.webp',
 		'online-teacher.png'        => 'https://quranchapter.com/wp-content/uploads/2026/09/online-teacher.png',
+		'teacher-1.jpg'             => 'https://quranchapter.com/wp-content/uploads/2026/09/teacher-1.jpg',
+		'teacher-2.jpg'             => 'https://quranchapter.com/wp-content/uploads/2026/09/teacher-2.jpg',
+		'teacher-3.jpg'             => 'https://quranchapter.com/wp-content/uploads/2026/09/teacher-3.jpg',
+		'teacher-4.jpg'             => 'https://quranchapter.com/wp-content/uploads/2026/09/teacher-4.jpg',
+		'teacher-5.jpg'             => 'https://quranchapter.com/wp-content/uploads/2026/09/teacher-5.jpg',
+		'teacher-6.jpg'             => 'https://quranchapter.com/wp-content/uploads/2026/09/teacher-6.jpg',
 		'team-bg-v2.png'            => 'https://quranchapter.com/wp-content/uploads/2026/09/team-bg-v2.png',
 		'testimonial-student-v2.png' => 'https://quranchapter.com/wp-content/uploads/2026/09/testimonial-student-v2.png',
 	);

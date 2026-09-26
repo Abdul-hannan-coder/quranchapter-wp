@@ -1,0 +1,421 @@
+/* =============================================
+   FOOTER STYLES
+   Quran Chapter Theme
+============================================= */
+
+footer {
+  background: #041f1d;
+  color: #fff
+}
+
+.footer-main {
+  padding: 75px 0 55px;
+  display: grid;
+  grid-template-columns: 1.45fr repeat(3, 1fr);
+  gap: 70px
+}
+
+.footer-brand img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  background: #fff;
+  margin-bottom: 20px
+}
+
+.footer-main p,
+.footer-main a,
+.footer-main span {
+  color: rgba(255, 255, 255, .56);
+  font-size: 12px;
+  line-height: 1.7
+}
+
+.footer-main>div:not(.footer-brand) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.footer-main h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--gold-light);
+  margin: 0 0 12px
+}
+
+.footer-main a:hover {
+  color: #fff
+}
+
+.footer-socials {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px
+}
+
+.copyright {
+  height: 70px;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, .35);
+  font-size: 10px
+}
+
+.whatsapp-float {
+  position: fixed;
+  z-index: 40;
+  right: 22px;
+  bottom: 22px;
+  height: 52px;
+  background: #20bf6b;
+  color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .25);
+  transition: .25s
+}
+
+.whatsapp-float span {
+  width: 52px;
+  text-align: center;
+  font-size: 24px
+}
+
+.whatsapp-float i {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 700;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: .3s
+}
+
+.whatsapp-float:hover {
+  padding-right: 18px
+}
+
+.whatsapp-float:hover i {
+  width: 75px
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity .75s ease, transform .75s ease
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none
+}
+
+.delay-1 {
+  transition-delay: .12s
+}
+
+.delay-2 {
+  transition-delay: .24s
+}
+
+.delay-3 {
+  transition-delay: .36s
+}
+
+@media(max-width:1050px) {
+  .contact-bar {
+    grid-template-columns: 160px repeat(3, 1fr)
+  }
+
+  .contact-item.location {
+    display: none
+  }
+
+  .nav-links>a,
+  .nav-links a,
+  .nav-links li>a,
+  .nav-dropdown>button {
+    padding: 0 13px
+  }
+
+  .hero-grid {
+    grid-template-columns: 52% 48%
+  }
+
+  .hero-frame {
+    width: 54vw
+  }
+
+  .about-grid {
+    gap: 55px
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .teachers>.container {
+    grid-template-columns: 230px 1fr
+  }
+
+  .footer-main {
+    gap: 35px
+  }
+
+  .faq-grid {
+    gap: 60px
+  }
+}
+
+@media(max-width:820px) {
+  .bismillah {
+    font-size: 14px
+  }
+
+  .contact-bar {
+    display: none
+  }
+
+  .main-nav {
+    height: 70px;
+    background: #fff
+  }
+
+  .mobile-brand {
+    display: block
+  }
+
+  .mobile-brand img {
+    width: 92px;
+    height: 58px;
+    object-fit: contain
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
+    width: 46px;
+    height: 42px;
+    border: 0;
+    background: transparent;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: flex-end
+  }
+
+  .menu-toggle span {
+    height: 2px;
+    background: var(--green-dark);
+    width: 26px
+  }
+
+  .menu-toggle span:nth-child(2) {
+    width: 20px
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    height: auto;
+    background: var(--green-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px 20px 24px;
+    transform: translateY(-15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    transform: none
+  }
+
+  .nav-links>a,
+  .nav-links a,
+  .nav-links li>a,
+  .nav-dropdown>button {
+    height: 48px;
+    padding: 0 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    width: 100%
+  }
+
+  .nav-dropdown {
+    height: auto
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, .12)
+  }
+
+  .nav-dropdown.open .dropdown-menu {
+    display: block
+  }
+
+  .nav-cta {
+    margin-left: 15px;
+    padding: 12px 16px
+  }
+
+  .socials {
+    display: none
+  }
+
+  .hero,
+  .hero-grid {
+    min-height: 790px
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr
+  }
+
+  .hero-copy {
+    padding: 75px 0 20px
+  }
+
+  .hero h1 {
+    font-size: 54px
+  }
+
+  .hero-visual {
+    min-height: 330px
+  }
+
+  .hero-frame {
+    top: 0;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    border-radius: 140px 0 0 0
+  }
+
+  .hero-frame:after {
+    background: linear-gradient(0deg, rgba(6, 46, 43, .5), transparent)
+  }
+
+  .lessons {
+    top: 25px;
+    right: 15px
+  }
+
+  .rating {
+    left: 15px;
+    bottom: 50px
+  }
+
+  .scroll-cue {
+    display: none
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .trust-grid>div {
+    min-height: 90px;
+    border-bottom: 1px solid rgba(7, 61, 55, .14)
+  }
+
+  .section {
+    padding: 80px 0
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 70px
+  }
+
+  .about-media {
+    max-width: 570px;
+    margin: auto
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr
+  }
+
+  .course-card {
+    min-height: 330px
+  }
+
+  .course-more {
+    flex-direction: column
+  }
+
+  .teachers>.container {
+    grid-template-columns: 1fr
+  }
+
+  .teachers-intro {
+    max-width: 500px
+  }
+
+  .testimonial-wrap {
+    grid-template-columns: 1fr;
+    gap: 45px
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 45px
+  }
+
+  .footer-main {
+    grid-template-columns: 1.2fr 1fr 1fr
+  }
+
+  .footer-main>div:last-child {
+    grid-column: 2/4
+  }
+
+  .cta {
+    height: 610px
+  }
+
+  .cta-bg {
+    object-position: 62% center
+  }
+
+  .cta:after {
+    background: linear-gradient(90deg, rgba(4, 35, 31, .98), rgba(4, 35, 31, .72))
+  }
+}
+
+@media(max-width:560px) {
+  .container {
+    width: min(100% - 28px, 1160px)
+  }
+
+  .bismillah {
+    height: 27px;
+    line-height: 27px;
+    font-size: 12px
+  }
+
+  .nav-cta {
+    font-size: 0;
+    padding: 11px 13px
+  }
+
+  .nav-cta span {
